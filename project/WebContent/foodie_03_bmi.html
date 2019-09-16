@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<body lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BMI Calculator</title>
+
+
+
+<link type="text/css" rel="stylesheet" href="./css/foodie.css">
+<link
+	href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/foodie.js"></script>
+
+<script type="text/javascript">
+
+$(function () {
+	$('input[name="height"]').blur(function () {
+		let height = $(this).val();
+		if(height <200 && height>50){
+			$("#sheight").text("키 입력 완료");
+		} else{
+			$("#sheight").text("정확한  키 수치를 숫자로 입력해주세요");
+		}
+	});
+	
+	$('input[name="weight"]').blur(function () {
+		let weight = $(this).val();
+		if(weight<150 && weight>1){
+			$("#sweight").text("몸무게 입력 완료");
+		} else{
+			$("#sweight").text("정확한 몸무게 수치를 숫자로 입력해주세요");
+		}
+	});
+	
+	$("#bmi_btn").click(function () {
+		let height = $("#height").val();
+		let weight = $("#weight").val();
+		let result = Math.round(weight / ((height*0.01)*(height*0.01))*10)/10.0;
+		
+		$("#bmi_result").html("<span class='bold'>"+result+"</span>");
+		
+		let category;
+		if(result<18.5){
+			category = "Underweight";
+		} else if (18.5<=result<=24.9){
+			category = "Normal";
+		} else if (25.0<= result <=29.9){
+			category = "Overweight";
+		} else{
+			category = "Obese";
+		}
+		
+		let explanation = "For the information you entered: <br><br>Height: <span class='bold'>";
+		explanation += height;
+		explanation += "cm</span> <br>Weight: <span class='bold'>"
+		explanation += weight;
+		explanation += "kg</span> <br>Your BMI is <span class='bold'>";
+		explanation += result;
+		explanation += "</span>, indicating your weight is in the <span class='bold'>";
+		explanation += category;
+		explanation += "</span> category for the adults of your height. <br><br><hr>"
+		explanation += "<span class='bold'> [ BMI Categories ] <br><br>Underweight</span> = <18.5 <br><span class='bold'>Normal weight</span> = 18.5–24.9 <br><span class='bold'>Overweight</span> = 25–29.9 <br><span class='bold'>Obesity</span> = BMI of 30 or greater"
+		
+		$("#bmi_category").html(explanation);
+		
+	});
+	
+	
+});
+
+
+
+</script>
+
+
+</head>
+
+<body>
+	<div id="">
+
+		<div class="w3-top w3-hide-small">
+			<div
+				class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
+				id="myNavbar">
+				<ul>
+					<li><a href="foodie_main.html">Home</a></li>
+					<li><a href="foodie_01_foods.html">Foods</a></li>
+					<li><a href="foodie_02_restaurants.html">Restaurants</a></li>
+					<li class="dropdown"><a href=""
+						id="dropmenu">More</a>
+						<div class="dropdown-content">
+							<a href="foodie_03_bmi.html" class="drop_btn">BMI Check</a> <a
+								href="foodie_04_etc.html" class="drop_btn">Etc.</a>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+		<br><br><br>
+		<p class="title">BMI Calculator</p>
+		<div class="w3-sidebar w3-bar-block w3-card"
+			style="width: 15%; right: 0;">
+
+
+			<fieldset id="search" style="background-color: #F6F7F5">
+				<legend>Search it!</legend>
+				<input type="text" name="search" id="search_input"
+					placeholder="Type to Search" /> <input type="submit" value="search"
+					id="search_btn" />
+			</fieldset>
+
+			<br>
+
+			<fieldset style="background-color: #F6F7F5">
+				<legend class="name">Log-In</legend>
+
+				<!-- 로그인창으로 이동 -->
+				<button id="login" class="name">Log-in</button>
+
+				<!-- 회원 가입창으로 이동 -->
+				<button id="join" class="name">Join</button>
+				<br />
+
+			</fieldset>
+			<br>
+
+			<fieldset id="contact" style="background-color: #F6F7F5">
+				<legend class="name">Contact us!</legend>
+
+				<!--누르면 이메일 보낼 수 있는 링크-->
+				<a href="mailto:juhyun.kim@lindsey.edu?subject=Feedback">Email
+					to us</a> <br>
+
+			</fieldset>
+
+			<br>
+			<fieldset style="background-color: #F6F7F5">
+				<legend class="name">Links</legend>
+				<!--새 창에서 구글로 이동하는 링크-->
+				<a href="http://www.google.com/" target="_blank">Google.com</a> <br>
+
+
+			</fieldset>
+		</div>
+
+
+		<p id="bmi_intro">
+			&nbsp;&nbsp;Calculate Your Body Mass Index Body mass index (BMI) is a
+			measure of body fat based on height and weight that applies to adult
+			men and women. <br> &nbsp;&nbsp;Enter your weight and height
+			using standard or metric measures. Select "Compute BMI" and your BMI
+			will appear below.
+		</p>
+		<form action="">
+			<br> <br>
+			<div id="bmi">
+
+				<fieldset>
+					<legend style="text-decoration: none">Check Your BMI!</legend>
+					Your Height : <input type="text" name="height" id="height">
+					(cm) <span id="sheight" class="error"></span> <br> Your Weight
+					: <input type="text" name="weight" id="weight"> (kg) <span
+						id="sweight" class="error"></span> <br> <br> <input
+						type="button" value="Compute BMI" id="bmi_btn"> &nbsp; <input
+						type="reset" value="Recalculate BMI"> <br> <br>
+					Your BMI :
+					<div id="bmi_result"></div>
+					<br> Your BMI Category :
+					<div id="bmi_category"></div>
+				</fieldset>
+
+			</div>
+		</form>
+		<pre>
+
+
+
+
+
+
+</pre>
+
+
+
+		<footer>
+			<p>Posted by: Juhyun Kim</p>
+			<p>
+				Contact information: <a href="mailto:juhyun.kim@lindsey.edu">
+					juhyun.kim@lindsey.edu</a>
+			</p>
+		</footer>
+
+	</div>
+
+</body>
+</html>

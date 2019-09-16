@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<title>Healthy Foods</title>
+<link type="text/css" rel="stylesheet" href="./css/foodie.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="./js/foodie.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+	<div class="w3-top w3-hide-small">
+		<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
+			id="myNavbar">
+			<ul>
+				<li><a href="foodie_main.html">Home</a></li>
+				<li><a href="foodie_01_foods.html">Foods</a></li>
+				<li><a href="foodie_02_restaurants.html">Restaurants</a></li>
+				<li class="dropdown"><a href="" id="dropmenu">More</a>
+					<div class="dropdown-content">
+						<a href="foodie_03_bmi.html" class="drop_btn">BMI Check</a> <a
+							href="foodie_04_etc.html" class="drop_btn">Etc.</a>
+					</div></li>
+			</ul>
+		</div>
+	</div>
+
+<br><br><br>
+
+
+	<p class="title">What to Eat to Stay Healthy and Fit</p>
+
+	<div class="w3-sidebar w3-bar-block w3-card"
+		style="width: 15%; right: 0;">
+
+
+		<fieldset id="search" style="background-color: #F6F7F5">
+			<legend>Search it!</legend>
+			<input type="text" name="search" id="search_input"
+				placeholder="Type to Search" /> <input type="submit" value="search"
+				id="search_btn" />
+		</fieldset>
+
+		<br>
+
+		<fieldset style="background-color: #F6F7F5">
+			<legend class="name">Log-In</legend>
+
+			<!-- 로그인창으로 이동 -->
+			<button id="login" class="name">Log-in</button>
+
+			<!-- 회원 가입창으로 이동 -->
+			<button id="join" class="name">Join</button>
+			<br />
+
+		</fieldset>
+		<br>
+
+		<fieldset id="contact" style="background-color: #F6F7F5">
+			<legend class="name">Contact us!</legend>
+
+			<!--누르면 이메일 보낼 수 있는 링크-->
+			<a href="mailto:juhyun.kim@lindsey.edu?subject=Feedback">Email to
+				us</a> <br>
+
+		</fieldset>
+
+		<br>
+		<fieldset style="background-color: #F6F7F5">
+			<legend class="name">Links</legend>
+			<!--새 창에서 구글로 이동하는 링크-->
+			<a href="http://www.google.com/" target="_blank">Google.com</a> <br>
+
+
+		</fieldset>
+	</div>
+
+
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-main w3-content w3-padding"
+		style="max-width: 1200px; margin-top: 10px">
+
+		<!-- First Photo Grid-->
+		<div class="w3-row-padding w3-padding-16 w3-center" id="food">
+			<div class="w3-quarter">
+				<img src="./img/almond-milk.jpg" alt="Almond-milk" class="food_img">
+				<h3>Oats</h3>
+				<p>If breakfast is just a cup of tea, well then you won’t be
+					able to have a healthy and fit life. Breakfast is the most
+					important meal of the day and you must eat well. Oats for example
+					are high on copper, zinc and niacin nutrients but still make for a
+					filling meal. If you are always on-the-go, then prepare your
+					oatmeal bowl before-hand. Make different oats recipes every day!</p>
+			</div>
+			<div class="w3-quarter">
+				<img src="./img/blueberries.jpg" alt="Blueberries" class="food_img">
+				<h3>Blueberries</h3>
+				<p>Berries again have umpteen health benefits. It prevents sun
+					damage and keeps your skin looking younger. Its fibre content also
+					helps you feel full, this way you eat less in a day and lose weight
+					gradually. You can pack this in your tiffin, and munch on it
+					whenever you are hungry while working, studying etc.</p>
+			</div>
+			<div class="w3-quarter">
+				<img src="./img/detox.jpg" alt="Detox Water" class="food_img">
+				<h3>Detox Water</h3>
+				<p>If you are someone who constantly struggles to drink enough
+					water, then this one is for you! Maximise the mineral content of
+					your water by infusing it with mint, fruit pulps, lemon slices,
+					cucumber et al. That way, whatever amount of water you manage to
+					drink it will help you stay hydrated and help cleanse your system.</p>
+			</div>
+			<div class="w3-quarter">
+				<img src="./img/salmon2.jpg" alt="Salmon" class="food_img">
+				<h3>Salmon</h3>
+				<p>If you are a fish lover, then salmon sure will entice you!
+					Salmon has many health benefits; like it prevents heart disease by
+					lowering cholesterol, helps fight sun damage and makes skin supple.
+					Also, Salmon helps with weight loss and reduces belly fat. Eat it
+					once a week to see the difference.</p>
+			</div>
+		</div>
+
+		<!-- Second Photo Grid-->
+		<div class="w3-row-padding w3-padding-16 w3-center">
+			<div class="w3-quarter">
+				<img src="./img/dryfruits.jpg" alt="Dry Fruits" style="width: 100%">
+				<h3>Dry Fruits</h3>
+				<p>This is the easiest and most fuss free food to have on you
+					when you’re hungry. Not only are they packed with a whole lot of
+					energy but also with nutrients and fibers that are good for your
+					body. Plus, dry fruits are super convenient to carry around in a
+					small box.</p>
+			</div>
+			<div class="w3-quarter">
+				<img src="./img/corn.jpg" alt="Corn chaat" style="width: 100%">
+				<h3>Corn chaat</h3>
+				<p>Boil loose kernels of corn and play with the ingredients.
+					Corn is one of the most versatile grains which pairs very well with
+					a lot of things. You can add chopped onions, tomatoes, coriander,
+					some red chilli powder, a pinch of salt and some lime to complete
+					this healthy snack.</p>
+			</div>
+			<div class="w3-quarter">
+				<img src="./img/beans.jpg" alt="Roasted/masala/salted beans"
+					style="width: 100%">
+				<h3>Roasted/masala/salted beans</h3>
+				<p>A small bowl of dry roasted beans or chickpeas can prove to
+					be a very healthy and filling snack. Legumes and beans like
+					chickpeas are high on fiber and protein, and contain several key
+					vitamins and minerals.</p>
+			</div>
+			<div class="w3-quarter">
+				<img src="./img/kurmura.jpg" alt="Kurmura (puffed rice)"
+					style="width: 100%">
+				<h3>Kurmura (puffed rice)</h3>
+				<p>A little bit of oil, turmeric, salt and chilli powder can
+					turn this very humble kurmura into a delish snack. Once again, it’s
+					very easy to carry around in your bag and even store a small
+					container of it at work. It goes very well with hot tea. Now you
+					know what your 4 o’clock tea time snack at work is going to be!</p>
+			</div>
+		</div>
+
+		<!-- Pagination -->
+		<div class="w3-center w3-padding-32">
+			<div class="w3-bar">
+				<a href="#" class="w3-bar-item w3-button w3-hover-black">«</a> <a
+					href="#" class="w3-bar-item w3-black w3-button">1</a> <a href="#"
+					class="w3-bar-item w3-button w3-hover-black">2</a> <a href="#"
+					class="w3-bar-item w3-button w3-hover-black">3</a> <a href="#"
+					class="w3-bar-item w3-button w3-hover-black">4</a> <a href="#"
+					class="w3-bar-item w3-button w3-hover-black">»</a>
+			</div>
+		</div>
+
+	</div>
+	<footer>
+		<p>Posted by: Juhyun Kim</p>
+		<p>
+			Contact information: <a href="mailto:juhyun.kim@lindsey.edu">
+				juhyun.kim@lindsey.edu</a>
+		</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<title>Join</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+const log = console.log;
+let xdata;
+
+$(function () {
+
+	$("#id_check").click( function () {
+		idcheck();
+	});
+	
+});
+
+function idcheck() {
+	
+	//let userid = $("#ID").val();
+	
+	$.ajax({
+		url: "idcheck.jsp",
+		dataType: "json",
+		type: "get",
+		data: {id: $("#id").val()},
+		success: function (data) {
+			
+			if(data.id==undefined){
+				$("#msg1").html("사용 가능한 아이디입니다.");
+				
+			} else{
+				$("#msg1").html("중복된 아이디 입니다. 다른 아이디를 입력하세요.");
+			}
+			
+		},
+		error: function (error) {
+			alert("에러..."+ error)
+		}
+	});
+	
+}
+
+</script>
+
+<style type="text/css">
+.error{
+	color: blue;
+	font-family: monospace;
+}
+</style>
+
+
+</head>
+<body>
+
+<h2> 회원 가입 </h2>
+
+	<form action="http://localhost:8000/1_html/adduser.jsp" method="get">   <!-- form tag로 에워싸야 안에 있는 data를 넘겨 줄 수 있음 -->
+	<table border="1">
+	<tbody>
+	<tr>
+		<td> <label for = "ID">ID </label>	</td>
+		<td><input type="text" id="id" name="id" value=""/>
+			<input type="button" value="ID 중복체크" id="id_check"/>
+			<br>
+			<span id="msg1" class="error"></span>
+
+		</td>
+	</tr>
+	<tr>
+		<td> <label for = "PW">Password </label>		
+		<td><input type="password" id="PW" name="PW" value=""/></td>
+	</tr>
+	<tr>
+		<td> <label for = "Name">Name </label>
+		<td><input type="text" id="Name" name="Name" /></td>
+	</tr>
+	<tr>
+		<td> <label for = "Role">Role </label>	
+		<td><input type="radio" id="user" name="Role" value="user" /> User 
+		<input type="radio" id="admin" name="Role" value="admin" /> Admin </td>	
+	</tr>
+	<tr>
+		<td colspan = "2" align="center">
+			<input type="submit" value="Submit" /> <!-- submit을 누르면 aciton이 수행됨 -->
+			<input type="reset" value="Cancel" />
+		</td>
+	</tr> 
+
+	</tbody>
+	</table>
+	<br/><br/>
+	
+	
+	<a href="login.html"> 로그인 창으로 돌아가기 </a>
+	</form>
+	
+</body>
+</html>

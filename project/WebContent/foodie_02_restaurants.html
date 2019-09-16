@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<title>Restaurants</title>
+<link type="text/css" rel="stylesheet" href="./css/foodie.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="./js/foodie.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+	const log = console.log;
+
+	jQuery(function() {
+
+	});
+</script>
+
+
+
+</head>
+<body>	
+	<div class="w3-top w3-hide-small">
+		<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
+			id="myNavbar">
+			<ul>
+				<li><a href="foodie_main.html">Home</a></li>
+				<li><a href="foodie_01_foods.html">Foods</a></li>
+				<li><a href="foodie_02_restaurants.html">Restaurants</a></li>
+				<li class="dropdown"><a href="" id="dropmenu">More</a>
+					<div class="dropdown-content">
+						<a href="foodie_03_bmi.html" class="drop_btn">BMI Check</a> <a
+							href="foodie_04_etc.html" class="drop_btn">Etc.</a>
+					</div></li>
+			</ul>
+		</div>
+	</div>
+<br><br><br>
+	<p class="title">Restaurants Information</p>
+	<div class="w3-sidebar w3-bar-block w3-card"
+		style="width: 15%; right: 0;">
+
+
+		<fieldset id="search" style="background-color: #F6F7F5">
+			<legend>Search it!</legend>
+			<input type="text" name="search" id="search_input"
+				placeholder="Type to Search" /> <input type="submit" value="search"
+				id="search_btn" />
+		</fieldset>
+
+		<br>
+
+		<fieldset style="background-color: #F6F7F5">
+			<legend class="name">Log-In</legend>
+
+			<!-- 로그인창으로 이동 -->
+			<button id="login" class="name">Log-in</button>
+
+			<!-- 회원 가입창으로 이동 -->
+			<button id="join" class="name">Join</button>
+			<br />
+
+		</fieldset>
+		<br>
+
+		<fieldset id="contact" style="background-color: #F6F7F5">
+			<legend class="name">Contact us!</legend>
+
+			<!--누르면 이메일 보낼 수 있는 링크-->
+			<a href="mailto:juhyun.kim@lindsey.edu?subject=Feedback">Email to
+				us</a> <br>
+
+		</fieldset>
+
+		<br>
+		<fieldset style="background-color: #F6F7F5">
+			<legend class="name">Links</legend>
+			<!--새 창에서 구글로 이동하는 링크-->
+			<a href="http://www.google.com/" target="_blank">Google.com</a> <br>
+
+		</fieldset>
+	</div>
+
+	<fieldset id="res_info">
+		<legend id="top3">Top 3 Restaurants Serve Healthy Food</legend>
+
+		<br> <a href="http://chickpeace.co.kr/" target="iframe1"
+			class="res"> 1) Chick Peace</a> <br> <a
+			href="http://www.laferme.co.kr/" target="iframe1" class="res"> 2)
+			Laferme</a> <br> <a href="https://www.piginthegarden.com:441/"
+			target="iframe1" class="res"> 3) Pig in the Garden</a> <br>
+		<br>
+	</fieldset>
+
+	<br>
+	<br>
+
+	<iframe src="" name="iframe1" width="70%" height="600"></iframe>
+	<br>
+	<footer>
+		<p>Posted by: Juhyun Kim</p>
+		<p>
+			Contact information: <a href="mailto:juhyun.kim@lindsey.edu">
+				juhyun.kim@lindsey.edu</a>
+		</p>
+	</footer>
+
+</body>
+</html>
