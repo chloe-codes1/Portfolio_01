@@ -5,7 +5,8 @@
 https://chloe-codes1.github.io/Portfolio_01/
 
 <br/>
-
+<br/>
+<br/>
 
 
 ## Eat Like a Foodie and Stay Healthy! :tomato:
@@ -13,14 +14,14 @@ https://chloe-codes1.github.io/Portfolio_01/
 `Java`  `Ajax`  `Json`  `JavaScript`  `jQuery`  `HTML`  `CSS`  `JSP`  `Oracle 11g`
 
 <br/>
-
+<br/>
 
 > Main Page
 
 ![foodie-main](foodie-main.png)
 
 <br/>
-
+<br/>
 
 
 > Index
