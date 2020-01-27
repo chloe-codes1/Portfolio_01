@@ -31,4 +31,4 @@
 
 
 
-[Link to this site](index.html)
+[Link to this site](/project/WebContent/index.html)
