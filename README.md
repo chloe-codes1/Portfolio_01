@@ -7,6 +7,8 @@ https://chloe-codes1.github.io/Portfolio_01/
 <br/>
 <br/>
 <br/>
+<br/>
+
 
 
 ## Eat Like a Foodie and Stay Healthy! :tomato:
@@ -16,7 +18,7 @@ https://chloe-codes1.github.io/Portfolio_01/
 <br/>
 <br/>
 
-> Previw - Main Page
+> Preview - Main Page
 
 ![foodie-main](foodie-main.png)
 
