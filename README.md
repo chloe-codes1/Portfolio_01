@@ -16,7 +16,7 @@ https://chloe-codes1.github.io/Portfolio_01/
 <br/>
 <br/>
 
-> Main Page
+> Previw - Main Page
 
 ![foodie-main](foodie-main.png)
 
