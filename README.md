@@ -7,8 +7,15 @@
 
 `Java`  `Ajax`  `Json`  `JavaScript`  `jQuery`  `HTML`  `CSS`  `JSP`  `Oracle 11g`
 
+<br/>
+
+
+
+![foodie-main](foodie-main.png)
 
 <br/>
+
+
 
 > Index
 
@@ -19,6 +26,6 @@
     5) Etc. page  -  foodie_04_etc.html
     6) Log-In page  -  login.html
     7) Join page  -  join.html
-    
+
 <br/>
 
