@@ -9,7 +9,8 @@
 
 
 <br/>
-[ Index ] 
+
+> Index
 
     1) Main page  - index.html
     2) Foods page  -  foodie_01_foods.html
